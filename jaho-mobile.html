@@ -347,8 +347,8 @@ NEVER GONNA TELL A LIE AND HURT YOU
           return check;
       };
   
-      if (navigator.mobileCheck()) {
-          window.location.href = "/jaho-mobile.html"
+      if (!navigator.mobileCheck()) {
+          window.location.href = "/jaho.html"
       }
       console.log(navigator.mobileCheck());
       function copyToClipboard() {
