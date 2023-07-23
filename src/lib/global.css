@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html,
+body {
+    display: flex;
+    text-align: start;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(10, 0, 0, 0.55) 0%, rgba(10, 0, 0, 0.55) 100%), radial-gradient(71.48% 71.48% at 50.00% -0.00%, #D04141 0%, #761F1F 53.13%, #260000 100%);
+    color: hsl(0, 0%, 100%);
+    overflow: auto;
+}
+
+
+p {
+    font-size: .9rem;
+    color: hsl(0, 0%, 80%);
+}
+
+
+#container > h1 {
+    font-size: 3rem;
+}
+
+a.button, button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, .075);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+}
+a.button.small, button.small {
+    display: inline-flex;
+    padding: .2rem;
+    background-color: transparent;
+}
+a.button.small:hover, button.small:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+}
+a.button:hover, button:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+}
+button.icon {
+    background-color: transparent;
+    padding: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.icon:hover {
+    background-color: hsla(0, 0%, 100%, .1);
+}
+
+
+a {
+    color: currentColor;
+}
+a:hover {
+    color: hsl(0, 0%, 100%);
+}
+img {
+    margin: 0 auto;
+    max-width: 90%;
+}

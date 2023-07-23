@@ -1,4 +1,4 @@
-        
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@
 <div class="loki" style="
     position: relative;
 ">
-<button type="button" onclick="document.querySelector('.loki').insertAdjacentHTML('afterend','<div>thx to Kn0ax, Rexolion </div>')">credits</button>
+<button type="button" onclick="document.querySelector('.loki').insertAdjacentHTML('afterend','<div>thx to Kn0ax, MeTaNN, ardadaglioglu, taha_kara14, Falael</div>')">credits</button>
 </div>
     <script>
         const X_PIXELS=20
@@ -41,8 +41,8 @@
         const X_OFFSET=100
         const Y_OFFSET=100
 
-        const X_IN_PLACE=771
-        const Y_IN_PLACE=149
+        const X_IN_PLACE=-367
+        const Y_IN_PLACE=462
 
 
         function getMousePos(canvas, evt) {
@@ -86,7 +86,7 @@
             bg.drawImage(img, 0, 0, img.width, img.height, 0, Y_OFFSET, w, h)
             drawGrid(0, Y_OFFSET, w, h + Y_OFFSET, bg)
         };
-        img.src = 'https://media.discordapp.net/attachments/1131692666476826688/1132022034935861278/pixelburddranzer.png'
+        img.src = 'https://cdn.discordapp.com/attachments/901788049963384842/1132413017263440053/image.png'
           function drawText(text, x, y){
             fg.font = '80px Sans-serif';
             fg.strokeStyle = 'black';
@@ -140,7 +140,7 @@
                 return;
             }
 
-            let url ="https://new.reddit.com/r/place/?cx="+x+"&cy="+y+"&px=1"
+            let url ="https://new.reddit.com/r/place/?cx="+x+"&cy="+y+"&px=23"
             window.open(url, '_blank').focus();
         });
 

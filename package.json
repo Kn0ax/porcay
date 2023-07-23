@@ -1,0 +1,25 @@
+{
+	"name": "script-ssr",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^1.0.3",
+		"@sveltejs/kit": "^1.22.3",
+		"prettier": "^2.8.8",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^3.59.2",
+		"vite": "^4.4.6"
+	},
+	"type": "module",
+	"dependencies": {
+		"detect-browser": "^5.3.0",
+		"get-browser": "^1.0.2"
+	}
+}
