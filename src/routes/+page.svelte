@@ -49,7 +49,7 @@
         Script'i kuramayanlar "Harita Tıkla Git" butonuna tıklayarak haritaya gidebilirler.
         <br>
         <br>
-        Yardım için:
+        Yardım almak için:
         <br>
         <br>
         <a class="button discord" href="https://discord.gg/ce8NdJ4FET">
