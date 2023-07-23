@@ -127,13 +127,14 @@ NEVER GONNA TELL A LIE AND HURT YOU
             font-size: 3rem;
         }
         #buttons {
-            display: grid;
+            display: flex;
+            flex-direction: row;
             grid-template-columns: 1fr 1fr 1fr;
             gap: .5rem;
         }
         a.button, button {
             color: hsl(0, 0%, 100%);
-            background-color: hsla(0, 0%, 100%, .075);
+            background-color: hsla(0, 0%, 100%, 0.2);
             border: none;
             padding: .8rem 1rem;
             border-radius: .25rem;
@@ -145,6 +146,7 @@ NEVER GONNA TELL A LIE AND HURT YOU
             cursor: pointer;
             font-weight: 500;
             text-align: center;
+            transition: .2s;
         }
         button.small {
             display: inline-flex;
@@ -226,6 +228,9 @@ NEVER GONNA TELL A LIE AND HURT YOU
         a:hover {
             color: hsl(0, 0%, 100%);
         }
+        .explanation-pic{
+            border-radius: .5rem;
+        }
     </style>
   </head>
   <body>
@@ -248,11 +253,15 @@ NEVER GONNA TELL A LIE AND HURT YOU
 
         <br>
         <br>
-        <p>1) Tampermonkey Eklentisini Kurun</p>
+        <p>1) <a
+            href="https://play.google.com/store/apps/details?id=org.mozilla.fenix&gl=TR">Firefox
+            Nightly for Developers</a> uygulamasını indirin</p>
         <br>
-        <p>2) "Script'i Kur" butonuna basarak scripti kurun</p>
+        <p>2) Tampermonkey eklentisini etkinleştirin</p>
         <br>
-        <p>3) "r/place'e Git" butonuna tıklayın</p>
+        <p>3) "Scripti yükle" butonuna tıklayın</p>
+        <br>
+        <p>4) "r/place'e Git" butonuna tıklayın</p>
         <br>
         <br>
         Script'i kuramayanlar "Harita Tıkla Git" butonuna tıklayarak haritaya
@@ -260,53 +269,45 @@ NEVER GONNA TELL A LIE AND HURT YOU
       </p>
 
       <div id="tampermonkey">
-
-        Tespit edilen tarayıcı:
-        <div id="detected-browser">
-
-        </div>
-        Tüm tarayıcılar:
-        <div id="other-browsers">
-          <a id="chrome" class="browser"
-            href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Chrome_icon_%28September_2014%29.svg"
-              alt srcset>
-          </a>
-          <a id="firefox" class="browser"
-            href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
-              alt srcset>
-          </a>
-          <a id="edge" class="browser"
-            href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Edge_Logo_2019.svg"
-              alt srcset>
-          </a>
-          <a id="safari" class="browser"
-            href="https://apps.apple.com/us/app/tampermonkey/id1482490089?mt=12">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/52/Safari_browser_logo.svg"
-              alt srcset>
-          </a>
-        </div>
-
-        NOT: Eğer tarayıcınız belirlenemediyse Chrome ikonuna tıklayıp kurmayı
-        deneyin. Tarayıcınız destekleniyorsa zaten (tarayıcı)'ya ekle butonunu
-        görebileceksiniz.
+        NOT: Bu işlem sadece Firefox Nightly for Developers uygulamasında
+        çalışır.
       </div>
 
       <div id="buttons">
         <a class="button"
-          href="https://github.com/Kn0ax/porcay/raw/erkan/tempman.user.js">Script'i
-          Kur</a>
-        <a class="button"
+          href="https://play.google.com/store/apps/details?id=org.mozilla.fenix&gl=TR"><p>1)
+            Firefox Nightly for Developers uygulamasını indirin</p></a>
+        <!-- <a class="button"
           href="https://www.reddit.com/r/place/?jsontemplate=https://kn0.dev/porcay.json">r/place'e
           Git</a>
-        <button id="dropdown-button" onclick="dropdownToggle()">Harita Tıkla Git</button>
-
+        <button id="dropdown-button" onclick="dropdownToggle()">Harita Tıkla Git</button> -->
+      </div>
+      <br>
+      <div id="tampermonkey">
+        Sol alttan 3 nokta tuşuna basın:
+        <img src="file:///C:/Users/okunamayanad/porcay/mobile-1.jpg" alt
+          class="explanation-pic">
+      </div>
+      <div id="tampermonkey">
+        Ardından "Eklentiler" tuşuna basın:
+        <img src="file:///C:/Users/okunamayanad/porcay/mobile-2.jpg" alt
+          class="explanation-pic">
+      </div>
+      <div id="tampermonkey">
+        "Tampermonkey" eklentisini etkinleştirin:
+        <img src="file:///C:/Users/okunamayanad/porcay/mobile-3.jpg" alt
+          class="explanation-pic">
+      </div>
+      <div id="tampermonkey">
+        Ardından "Scripti yükle" butonuna tıklayın:
+      </div>
+      <div id="buttons">
+        <a class="button"
+          href="https://github.com/okunamayanad/r-place-2023/raw/main/jahrein.2023.user.js">Scripti
+          yükle</a>
+        <a href="https://reddit.com/r/place" class="button">
+          r/place'e Git
+        </a>
       </div>
       <button onclick="videoDialogToggle()" class="button">Anlamayanlar için
         video</button>
@@ -393,7 +394,7 @@ NEVER GONNA TELL A LIE AND HURT YOU
       })()
   
       const browser = navigator.saysWho.split(' ')[0].toLowerCase()
-      document.getElementById('detected-browser').innerHTML = browser
+      // document.getElementById('detected-browser').innerHTML = browser
       // if (browser === 'chrome') {
       //     document.getElementById('detected-browser').innerHTML = `
       //         <a class="browser" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en" target="_blank">
