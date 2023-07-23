@@ -281,12 +281,13 @@ NEVER GONNA TELL A LIE AND HURT YOU
     </div>
 
     <div id="buttons">
-        <a class="button" href="https://github.com/okunamayanad/r-place-2023/raw/main/jahrein.2023.user.js">Script'i Kur</a>
-        <a class="button" href="https://www.reddit.com/r/place/">r/place'e Git</a>
-        <button id="dropdown-button" onclick="dropdownToggle()">Harita Tıkla Git</button>
-
+        <a class="button" href="" id="tampermonkey-download-button" target="_blank">1. Tampermonkey kur</a>
+        <a class="button" href="https://github.com/okunamayanad/r-place-2023/raw/main/jahrein.2023.user.js" target="_blank" rel="noopener">2. Script'i Kur</a>
+        <a class="button" href="https://www.reddit.com/r/place/">3. r/place'e Git</a>
+        
     </div>
     <button onclick="videoDialogToggle()" class="button">Anlamayanlar için video</button>
+    <button id="button" onclick="dropdownToggle()">Harita Tıkla Git</button>
 
 
     <div id="dropdown">
@@ -370,35 +371,40 @@ NEVER GONNA TELL A LIE AND HURT YOU
     })()
 
     const browser = navigator.saysWho.split(' ')[0].toLowerCase()
-
+    
     if (browser === 'chrome') {
         document.getElementById('detected-browser').innerHTML = `
-            <a class="browser" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en">
+            <a class="browser" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Chrome_icon_%28September_2014%29.svg" alt="" srcset="">
             </a>
         `
+        document.getElementById('tampermonkey-download-button').href = "https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en"
     } else if (browser === 'firefox') {
         document.getElementById('detected-browser').innerHTML = `
-            <a class="browser" href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">
+            <a class="browser" href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg" alt="" srcset="">
             </a>
         `
+        document.getElementById('tampermonkey-download-button').href = "https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"
     } else if (browser === 'edge') {
         document.getElementById('detected-browser').innerHTML = `
-            <a class="browser" href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd">
+            <a class="browser" href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Edge_Logo_2019.svg" alt="" srcset="">
             </a>
         `
+        document.getElementById('tampermonkey-download-button').href = "https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd"
     } else if (browser === 'safari') {
         document.getElementById('detected-browser').innerHTML = `
-            <a class="browser" href="https://apps.apple.com/us/app/tampermonkey/id1482490089?mt=12">
+            <a class="browser" href="https://apps.apple.com/us/app/tampermonkey/id1482490089?mt=12" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Safari_browser_logo.svg" alt="" srcset="">
             </a>
         `
+        document.getElementById('tampermonkey-download-button').href = "https://apps.apple.com/us/app/tampermonkey/id1482490089?mt=12"
     } else {
         document.getElementById('detected-browser').innerHTML = `
             <p>olum sen nerden giriyon tespit edemedim amk.</p>
         `
+        document.getElementById('tampermonkey-download-button').innerText = "olum sen nerden giriyon tespit edemedim amk."
     }
 
 
