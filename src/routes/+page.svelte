@@ -49,7 +49,12 @@
         Script'i kuramayanlar "Harita Tıkla Git" butonuna tıklayarak haritaya gidebilirler.
         <br>
         <br>
-        Destek için <a href="https://discord.gg/ce8NdJ4FET">Discord</a> sunucumuza katılabilirsiniz.
+        Yardım için:
+        <br>
+        <br>
+        <a class="button discord" href="https://discord.gg/ce8NdJ4FET">
+            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg">
+            Discord</a>
     </p>
 
     <div id="buttons">
@@ -85,5 +90,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: .5rem;
+    }
+    .button.discord {
+        background-color: #5865F2;
+        color: white;
+        display: inline-flex;
+        padding: 8px 16px;
+    }
+    .button.discord img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
     }
 </style>
