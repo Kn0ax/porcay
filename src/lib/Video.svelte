@@ -10,7 +10,7 @@
                 <path d="M21 3L3 21" stroke="white" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </button>
-        <video src="https://publiccdn.kn0.dev/erkan.mp4" controls></video>
+        <video src="https://publiccdn.kn0.dev/erkan.mp4?cachefix" controls></video>
     </div>
 {/if}
 
