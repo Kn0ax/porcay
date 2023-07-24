@@ -54,6 +54,7 @@
         position: absolute;
         background-color: hsl(0, 0%, 5%);
         border: 1px solid hsla(0, 0%, 100%, .1);
+        margin-top: -16rem;
         width: 50%;
         border-radius: .5rem;
         padding: .5rem;
