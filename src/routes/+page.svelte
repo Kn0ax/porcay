@@ -15,11 +15,10 @@
         safari: "https://apps.apple.com/us/app/tampermonkey/id1482490089"
     }
     let tampermonkeylink;
-    let video = false;
+    let videopen = false;
 
     onMount(() => {
         const browser = detect()
-        console.log(browser)
         if (browser.name.includes("chrome")) {
             tampermonkeylink = tampermonkeylinks.chrome
         } else if (browser.name.includes("firefox")) {
@@ -33,7 +32,9 @@
         }
     })
 </script>
-<Video  open={video}/>
+{#if videopen}
+    <Video on:close={() => (videopen = false)} />
+{/if}
 
 <Header />
 <div id="container">
@@ -65,7 +66,7 @@
         <a class="button" href="https://www.reddit.com/r/place/">3.) r/place'e Git</a>
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: .5rem;">
-        <button class="button" on:click={() => (video = true)}>Anlamayanlar için video</button>
+        <button class="button" on:click={() => (videopen = true)}>Anlamayanlar için video</button>
         <Dropdown>
             <button style="width: 100%" class="button" slot="trigger">Harita Tıkla Git</button>
             <a href="/anitkabir.html">Anıtkabir</a>

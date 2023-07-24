@@ -1,18 +1,20 @@
 <script>
-    export let open = false;
+    import { fade, scale } from 'svelte/transition';
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
 </script>
 
-{#if open}
-    <div id="video-dialog">
-        <button class="icon" style="position: fixed; top: 2rem; right: 2rem;" on:click={() => open = false}>
+
+    <div id="video-dialog" transition:fade={{duration: 200}}>
+        <button class="icon" style="position: fixed; top: 2rem; right: 2rem;" on:click={() => dispatch('close')}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 3L21 21" stroke="white" stroke-width="3" stroke-linecap="round"/>
                 <path d="M21 3L3 21" stroke="white" stroke-width="3" stroke-linecap="round"/>
             </svg>
         </button>
-        <video src="https://publiccdn.kn0.dev/erkan.mp4?cachefix" controls></video>
+        <video src="https://publiccdn.kn0.dev/erkan.mp4?cachefix" controls transition:scale={{duration: 200, start: 0.9}}></video>
     </div>
-{/if}
+
 
 <style>
     #video-dialog {

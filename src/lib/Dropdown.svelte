@@ -17,8 +17,11 @@
 
 
         document.addEventListener('click', (e) => {
-            console.log(e.target);
-            if (e.target !== trigger && e.target !== trigger.children[0]) {
+            try {
+                if (e.target !== trigger && e.target !== trigger.children[0]) {
+                    open = false;
+                }
+            } catch (e) {
                 open = false;
             }
         })
