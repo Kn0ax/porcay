@@ -1,0 +1,77 @@
+{
+
+  "contact": "rktfier",
+
+  "templates": [
+
+    {
+
+      "name": "siyah dranza",
+
+      "sources": [
+
+        "https://cdn.discordapp.com/attachments/1132037822673604710/1132077417675104278/siyah_dranza_16color.png"
+
+      ],
+
+      "x": 1222,
+
+      "y": 232
+
+    },
+
+    {
+
+      "name": "Çay",
+
+      "sources": [
+
+        "https://cdn.discordapp.com/attachments/1132306034313146418/1132326184752005130/TurkishTea.png"
+
+      ],
+
+      "x": -200,
+
+      "y": -100
+
+    },
+
+    {
+
+      "name": "Burdurlogo",
+
+      "sources": [
+
+        "https://media.discordapp.net/attachments/1131686620463116410/1131689490444992613/placeoranti2023.png"
+
+      ],
+
+      "x": -100,
+
+      "y": -100
+
+    },
+
+    {
+
+      "name": "Full Overlay",
+
+      "sources": [
+
+        "https://media.discordapp.net/attachments/412352998929596417/1132856554178228234/dqQVPpb.png"
+
+      ],
+
+      "x": 0,
+
+      "y": 0
+
+    }
+
+  ],
+
+  "whitelist": [],
+
+  "blacklist": []
+
+}
