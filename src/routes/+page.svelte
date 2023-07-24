@@ -71,7 +71,7 @@
             <button style="width: 100%" class="button" slot="trigger">Harita Tıkla Git</button>
             <a href="/anitkabir.html">Anıtkabir</a>
             <a href="/tik-bayrak.html">Bayrak</a>
-            <a href="/alfo.html">Alfo</a>
+            <a href="/alfo-2.html">Alfo</a>
         </Dropdown>
     </div>
 </div>
