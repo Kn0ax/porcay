@@ -4,6 +4,14 @@
 
 <header>
     <Tooltip>
+        <img src="https://cdn.discordapp.com/attachments/1133098322693984379/1133127552626597958/3867551e-c98d-4c52-b424-cda6743207fe-profile_image-300x300.png">
+        <span slot="content">NautaVeters</span>
+    </Tooltip>
+    <Tooltip>
+        <img src="https://cdn.discordapp.com/attachments/1133098322693984379/1133126218837926029/1234567.jpg">
+        <span slot="content">Polat Jalemdar</span>
+    </Tooltip>
+    <Tooltip>
         <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/ed3f1d02-76c2-4592-8566-92c4154a48a8-profile_image-70x70.png">
         <span slot="content">Order (Emir Nergiz)</span>
     </Tooltip>
@@ -41,8 +49,8 @@
         z-index: 1;
     }
     header img {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 4px;
         margin: 0;
         margin-right: 1rem;
