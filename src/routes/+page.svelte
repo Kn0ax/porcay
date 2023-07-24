@@ -61,7 +61,7 @@
     </p>
 
     <div id="buttons">
-        <a class="button" href="{tampermonkeylink}">1.) Tampermonkey'i Kur</a>
+        <a class="button" href="{tampermonkeylink}"target="_blank">1.) Tampermonkey'i Kur</a>
         <a class="button" href="https://github.com/okunamayanad/r-place-2023/raw/main/RPlace.2023.user.js">2.) Script'i Kur</a>
         <a class="button" href="https://www.reddit.com/r/place/">3.) r/place'e Git</a>
     </div>
