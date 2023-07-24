@@ -70,7 +70,7 @@
         <Dropdown>
             <button style="width: 100%" class="button" slot="trigger">Harita Tıkla Git</button>
             <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133044093090541569%2FTASARIM_FINAL.png&x=-368&y=290">Anıtkabir</a>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%B%2F1132650554196250625%2F1133044093090541569%2FTASARIM_FINAL.png&x=-368&y=290">Türk Bayrağı</a>
+            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133044093090541569%2FTASARIM_FINAL.png&x=-368&y=290">Türk Bayrağı</a>
             <a href="/alfo-2.html">Alfo</a>
             <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1132746689149673672%2Fdownload_3.png&x=-569&y=502">Atatürk</a>
             <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133078326433554452%2Fimage.png&x=-568&y=368">Deprem Anıtı</a>
