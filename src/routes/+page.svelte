@@ -74,6 +74,7 @@
             <a href="/alfo-2.html">Alfo</a>
             <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1132746689149673672%2Fdownload_3.png&x=-569&y=502">Atatürk</a>
             <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133078326433554452%2Fimage.png&x=-568&y=368">Deprem Anıtı</a>
+            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132507117690048594%2F1133182620721750046%2Fimage.png&x=-654&y=446">KKTC</a>
 
 
         </Dropdown>
