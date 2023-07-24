@@ -7,6 +7,7 @@
     } from 'detect-browser';
     import Footer from "$lib/Footer.svelte";
     import Video from "$lib/Video.svelte";
+    import Header from "$lib/Header.svelte";
     const tampermonkeylinks = {
         chrome: "https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en",
         firefox: "https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/",
@@ -34,6 +35,7 @@
 </script>
 <Video  open={video}/>
 
+<Header />
 <div id="container">
     <h1>TR r/place Script</h1>
     <p>Yapmanız gereken adımlar:
