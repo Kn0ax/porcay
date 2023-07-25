@@ -45,6 +45,8 @@
         cursor: pointer;
         border-radius: .5rem;
         z-index: 3;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
     }
     .canvas-container:hover {
         box-shadow: 0 0 1rem rgba(0,0,0,0.5);
@@ -57,7 +59,7 @@
         filter: brightness(0.25);
     }
     .canvas-container:hover #content {
-        transform: translateY(0%);
+        transform: translateY(0%) translateZ(15px);
 
     }
     #content {
@@ -69,7 +71,7 @@
         color: white;
         transition: all 200ms ease-in-out;
         font-weight: bold;
-        transform: translateY(100%);
+        transform: translateY(100%) ;
 
     }
     canvas {
