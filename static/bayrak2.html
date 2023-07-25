@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<style>
+<html lang="en">
+    <head>
+        <title>Türk Bayrağı Tıkla-Git</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
     
         body {
@@ -24,18 +26,17 @@
             left: 0;
         }
     </style>
-    <title>ATATÜRK'LÜ TÜRK BAYRAĞI</title>
-</head>
-<body>
-    <div id="container" class="container">
-        <canvas id="canvas_background" width="1000" height="1000"></canvas>
-        <canvas id="canvas_foreground" width="1000" height="1000"></canvas>
-<div class="loki" style="
-    position: relative;
-">
-        <button type="button" onclick="document.querySelector('.loki').insertAdjacentHTML('afterend','<div>thx to kn0ax, yaso09/yasocuk, z.x_x.z, ಠಿ_ಠ#0689</div>')">credits</button>
-</div>
-    <script>
+        <title>ATATÜRK'LÜ TÜRK BAYRAĞI</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <canvas id="canvas_background" width="1000" height="1000"></canvas>
+            <canvas id="canvas_foreground" width="1000" height="1000"></canvas>
+            <!-- <div class="loki" style="position: relative;">
+                <button type="button"
+                    onclick="document.querySelector('.loki').insertAdjacentHTML('afterend','<div>thx to kn0ax, yaso09/yasocuk, z.x_x.z, ಠಿ_ಠ#0689</div>')">credits</button>
+            </div> -->
+            <script>
         const X_PIXELS=20
         const Y_PIXELS=20
         const X_OFFSET=100
@@ -96,8 +97,7 @@
             fg.fillText(text, x, y);
         }
 
-        foreground.addEventListener('mousemove', event =>
-        {
+        foreground.addEventListener('mousemove', event => {
             let p = getMousePos(foreground, event);
             let x = Math.floor((p.x)/X_PIXELS);
             let y = Math.floor((p.y-Y_OFFSET)/Y_PIXELS) ;
@@ -130,8 +130,7 @@
 
         });
 
-        foreground.addEventListener('click', event =>
-        {
+        foreground.addEventListener('click', event => {
             let p = getMousePos(foreground, event);
             let x = Math.floor((p.x)/X_PIXELS) + X_IN_PLACE;
             let y = Math.floor((p.y-Y_OFFSET)/Y_PIXELS) + Y_IN_PLACE;
@@ -143,7 +142,8 @@
             let url ="https://new.reddit.com/r/place/?cx="+x+"&cy="+y+"&px=23"
             window.open(url, '_blank').focus();
         });
-
+        var credits = ['Credits:', 'okunamayanad', 'Kn0ax', 'Kax', 'Rexolion', 'qweeren']
+        console.table(credits)
     </script>
 </body>
 </html>
