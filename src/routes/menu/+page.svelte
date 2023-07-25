@@ -31,12 +31,7 @@
 
 
 <style>
-    @media (max-width: 768px) {
-        :global(canvas) {
-            width: 100% !important;
-            height: 100px !important;
-        }
-    }
+
     #back {
         position: fixed;
         top: 1rem;

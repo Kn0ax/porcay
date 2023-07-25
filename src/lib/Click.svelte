@@ -39,6 +39,18 @@
 
 
 <style>
+    @media (max-width: 900px) {
+        canvas {
+            width: 100% !important;
+            height: 15vh !important;
+        }
+    }
+    @media (max-width: 500px) {
+        canvas {
+            width: 100% !important;
+            height: 20vw !important;
+        }
+    }
 
     .canvas-container {
         position: relative;
