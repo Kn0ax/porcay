@@ -55,7 +55,7 @@
     canvas {
         height: 150px;
         image-rendering: pixelated;
-        border-radius: 1rem;
+        border-radius: .5rem;
         filter: brightness(1);
         transition: filter 100ms ease-in-out;
     }
