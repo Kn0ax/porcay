@@ -1,5 +1,4 @@
 <script>
-    import "$lib/global.css"
     import { onMount } from "svelte";
     import Dropdown from "$lib/Dropdown.svelte"
     import {
@@ -36,7 +35,6 @@
     <Video on:close={() => (videopen = false)} />
 {/if}
 
-<Header />
 <div id="container">
     <h1>TR r/place Script</h1>
     <p>Yapmanız gereken adımlar:
@@ -61,26 +59,16 @@
     </p>
 
     <div id="buttons">
-        <a class="button" href="{tampermonkeylink}"target="_blank">1.) Tampermonkey'i Kur</a>
+        <a class="button" href="{tampermonkeylink}" target="_blank">1.) Tampermonkey'i Kur</a>
         <a class="button" href="https://github.com/okunamayanad/r-place-2023/raw/main/RPlace.2023.user.js">2.) Script'i Kur</a>
         <a class="button" href="https://www.reddit.com/r/place/">3.) r/place'e Git</a>
     </div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: .5rem;">
         <button class="button" on:click={() => (videopen = true)}>Anlamayanlar için video</button>
-        <Dropdown>
-            <button style="width: 100%" class="button" slot="trigger">Harita Tıkla Git</button>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133044093090541569%2FTASARIM_FINAL.png&x=-368&y=290">Anıtkabir</a>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133044093090541569%2FTASARIM_FINAL.png&x=-368&y=290">Türk Bayrağı</a>
-            <a href="/alfo-2.html">Alfo</a>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1132746689149673672%2Fdownload_3.png&x=-569&y=502">Atatürk</a>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132650554196250625%2F1133078326433554452%2Fimage.png&x=-568&y=368">Deprem Anıtı</a>
-            <a href="https://shaanaliyev.github.io/r-placer/place.html?url=https%3A%2F%2Fcdn.discordapp.com%2Fattachments%2F1132507117690048594%2F1133182620721750046%2Fimage.png&x=-654&y=446">KKTC</a>
+            <a class="button" href="/menu">Harita Tıkla Git</a>
 
-
-        </Dropdown>
     </div>
 </div>
-<Footer />
 
 
 <style>
