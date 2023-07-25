@@ -14,6 +14,7 @@
             glare: true,
             scale: 1.1,
             "max-glare": 0.2,
+            gyroscope: false
         });
         const image = new Image();
         const ctx = canvas.getContext('2d');
@@ -44,6 +45,9 @@
         cursor: pointer;
         border-radius: .5rem;
         z-index: 3;
+    }
+    .canvas-container:hover {
+        box-shadow: 0 0 1rem rgba(0,0,0,0.5);
     }
 
     .canvas-container:hover #content {
