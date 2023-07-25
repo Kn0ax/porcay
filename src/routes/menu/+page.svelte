@@ -11,7 +11,7 @@
     <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1132746689149673672/download_3.png" href="https://kn0.dev/ataturk.html">
         Atatürk
     </Click>
-    <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1133191199826649098/image.png" href="https://kn0.dev/kiz-kulesi.html">
+    <Click src="https://cdn.discordapp.com/attachments/1132458676691677245/1133372372125237328/image.png" href="https://kn0.dev/kiz-kulesi.html">
         Kız kulesi
     </Click>
     <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1133160323373875271/image.png" href="https://kn0.dev/kibris.html">
