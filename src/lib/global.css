@@ -54,6 +54,12 @@ a.button.small:hover, button.small:hover {
 a.button:hover, button:hover {
     background-color: hsla(0, 0%, 100%, .1);
 }
+a.button.disabled, button.disabled {
+
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .5;
+}
 button.icon {
     background-color: transparent;
     padding: .5rem;

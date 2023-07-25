@@ -2,7 +2,7 @@
     import Click from "$lib/Click.svelte";
 </script>
 
-<a href="/" class="button icon" id="back">Geri Dön</a>
+<a href="/static" class="button icon" id="back">Geri Dön</a>
 <div id="grid">
     <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1133044093090541569/TASARIM_FINAL.png" href="https://blog.humanova.space/rplace-turkey/">
         Bayrak
@@ -23,7 +23,9 @@
     <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1133078326433554452/image.png" href="https://kn0.dev/deprem.html">
         Deprem Anıtı
     </Click>
-
+    <Click src="https://cdn.discordapp.com/attachments/1132458676691677245/1133421908428345555/image.png" href="https://kn0.dev/order-kel.html">
+        Kel Order
+    </Click>
 </div>
 
 
