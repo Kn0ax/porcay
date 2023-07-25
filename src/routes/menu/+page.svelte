@@ -23,6 +23,9 @@
     <Click src="https://cdn.discordapp.com/attachments/1132650554196250625/1133078326433554452/image.png" href="https://kn0.dev/deprem.html">
         Deprem Anıtı
     </Click>
+    <Click src="https://cdn.discordapp.com/attachments/1132458676691677245/1133417321776558140/image.png" href="https://kn0.dev/order-kel.html">
+        Kel Order
+    </Click>
 </div>
 
 
