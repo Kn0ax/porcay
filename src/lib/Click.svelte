@@ -34,12 +34,20 @@
     .canvas-container {
         position: relative;
         cursor: pointer;
+        transition: all 100ms ease-in-out;
+    }
+    .canvas-container:hover {
+        transform: translateY(-2.5%);
     }
     .canvas-container:hover #content {
         opacity: 1;
     }
     .canvas-container:hover canvas {
         filter: brightness(0.25);
+    }
+    .canvas-container:hover #content {
+        transform: translateY(0%);
+
     }
     #content {
         opacity: 0;
@@ -48,8 +56,9 @@
         left: 1rem;
         z-index: 1;
         color: white;
-        transition: opacity 100ms ease-in-out;
+        transition: all 200ms ease-in-out;
         font-weight: bold;
+        transform: translateY(100%);
 
     }
     canvas {
@@ -57,6 +66,6 @@
         image-rendering: pixelated;
         border-radius: .5rem;
         filter: brightness(1);
-        transition: filter 100ms ease-in-out;
+        transition: filter 200ms ease-in-out;
     }
 </style>
