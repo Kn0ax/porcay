@@ -34,6 +34,7 @@
 {#if videopen}
     <Video on:close={() => (videopen = false)} />
 {/if}
+<Header />
 
 <div id="container">
     <h1>TR r/place Script</h1>
