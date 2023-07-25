@@ -32,7 +32,6 @@
         :global(canvas) {
             width: 100% !important;
             height: 100px !important;
-            border-radius: .5rem !important;
         }
     }
     #back {
@@ -49,6 +48,6 @@
         height: auto;
         width: 50%;
         margin: auto;
-        gap: .25rem;
+        gap: 1rem;
     }
 </style>

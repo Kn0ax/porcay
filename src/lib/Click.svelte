@@ -3,10 +3,18 @@
     export let src;
     export let href;
     import { goto } from '$app/navigation';
+    import VanillaTilt from 'vanilla-tilt';
     export let name;
     let height;
     let canvas;
     onMount(() => {
+        VanillaTilt.init(document.querySelectorAll('.canvas-container'), {
+            max: 15,
+            speed: 1200,
+            glare: true,
+            scale: 1.1,
+            "max-glare": 0.2,
+        });
         const image = new Image();
         const ctx = canvas.getContext('2d');
         image.src = src;
@@ -34,11 +42,10 @@
     .canvas-container {
         position: relative;
         cursor: pointer;
-        transition: all 100ms ease-in-out;
+        border-radius: .5rem;
+        z-index: 3;
     }
-    .canvas-container:hover {
-        transform: translateY(-2.5%);
-    }
+
     .canvas-container:hover #content {
         opacity: 1;
     }
@@ -54,7 +61,7 @@
         position: absolute;
         bottom: 1rem;
         left: 1rem;
-        z-index: 1;
+        z-index: 4;
         color: white;
         transition: all 200ms ease-in-out;
         font-weight: bold;

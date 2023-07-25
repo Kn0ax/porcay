@@ -20,6 +20,7 @@
 	"type": "module",
 	"dependencies": {
 		"detect-browser": "^5.3.0",
-		"get-browser": "^1.0.2"
+		"get-browser": "^1.0.2",
+		"vanilla-tilt": "^1.8.0"
 	}
 }
