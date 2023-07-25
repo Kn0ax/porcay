@@ -20,6 +20,10 @@
         <span slot="content">Porçay (r/burdurland)</span>
     </Tooltip>
     <Tooltip>
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f6201b5a-821f-4e20-8344-b3994bf6b027-profile_image-70x70.png">
+        <span slot="content">AurumK (Ayberk Karasoy)</span>
+    </Tooltip>
+    <Tooltip>
         <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/df01d9fa-8ca3-452c-8762-7993e4e34b6b-profile_image-70x70.png" alt="" srcset="">
         <span slot="content">AirCaglar (Alper Çağlar)</span>
     </Tooltip>
